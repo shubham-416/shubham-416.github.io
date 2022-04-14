@@ -1,13 +1,5 @@
-body {
-  background-color: lightblue;
-}
-
+/css template/
 h1 {
-  color: white;
+  color: black;
   text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
 }
