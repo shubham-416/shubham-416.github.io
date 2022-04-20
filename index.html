@@ -16,9 +16,10 @@
          <a href="/My_learning.html"> My Learning </a></br>
          <a href="/Collage_image.html"> My Collage Images </a></br>
          <!-- Load external JavaScript -->
+         <h1>Time : <span id="time"></span></h1>
          <script>
-             const time_element = document.getElementById('time')
-             setInterval(function () {time_element.innerHTML = Date().split('(')[0].trim()}, 1000)
+            const time_element = document.getElementById('time')
+            setInterval(function () {time_element.innerHTML = Date().split('(')[0].trim()}, 1000)
          </script>
     </body>
 </html>
