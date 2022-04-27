@@ -5,20 +5,31 @@
         <meta charset="utf-8">
 
         <title>My Learning</title>
-
-        <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
+     <!-- Load external CSS styles -->
+       <style>
+      body {
+             background-repeat: no-repeat; background-image: url("My-learn.jpg"); background-size: 100%;background-attachment: fixed;
+           }
+    h1.center{
+      font size: 40%; font-color: #008000; 
+    }     
+      h2.center{
+                   font size: 80%; font-color: red; 
+                  }  
+    </style>
 
     </head>
 
     <body>
+      <h1>Time : <span id="time"></span></h1>
+         <script>
+            const time_element = document.getElementById('time')
+            setInterval(function () {time_element.innerHTML = Date().split('(')[0].trim()}, 1000)
+         </script>
 
-        <h1>My Learning</h1>
+        <h2>My Learning</h2>
         <a href="/Experiment_list.html"> Expirements </a></br>
         <a href="/Lab-Work.html"> Lab Work </a></br>
-        
-        <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
         
     </body>
 
