@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  background-color: RosyBrown;
-}
-<h1 style="background-color: #DC143C;">--------------------------------My Favourite Hobbies--------------------------------</h1>
-  .h2{
-         text-align: center;
-  color: red;
-      }
+  <style>
+      body {
+             background-repeat: no-repeat; background-image: url("B3.jpg"); background-size: 100%;background-attachment: fixed;
+           }
+    h1.center{
+      font size: 40%; font-color: #00FFFF; 
+    }     
+      h2.center{
+                   font size: 80%; font-color: purple; 
+                  }  
+    </style>
+
 </head>
 <body>
+  <h1>Time : <span id="time"></span></h1>
+         <script>
+            const time_element = document.getElementById('time')
+            setInterval(function () {time_element.innerHTML = Date().split('(')[0].trim()}, 1000)
+         </script>
  <h2>
   <li>     ---Internet Surfing---    </li>
   <li>     ---Watching Movies---     </li>
