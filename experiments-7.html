@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            const change_bg = () => {
+                document.getElementById('main').style.backgroundColor = "#2d2d2d"
+            }
+            const change_font_size = () => {
+                document.getElementById('main').style.fontSize = "200px"
+            }
+            const change_font_color = () => {
+                document.querySelectorAll("button").forEach(button => button.style.color = "#b5e853");
+            }
+            const change_align_center = () => {
+                document.getElementById('main').style.textAlign = "center"
+            }
+            const remove_underline = () => {
+                document.querySelector('a').style.setProperty('border-bottom', 'none', 'important');
+            }
+        </script>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <section>
+            <button type="button" onclick="change_bg()">Change Background Color</button><br><br>
+
+            <button type="button" onclick="change_font_size()">Change Font Size</button><br><br>
+            <button type="button" onclick="change_font_color()">Change Color</button><br><br>
+            <button type="button" onclick="change_align_center()">Align Text Center</button><br><br>
+            <a onclick="remove_underline()">Remove Underlines</a>
+        </section>
+    </body>
+</html>
